@@ -8,18 +8,42 @@
     android:background="@color/black"
     >
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        >
+
+    <ImageView
+        android:id="@+id/imageMainDial"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_compass" />
+
+        <ImageView
+            android:id="@+id/imageMainHands"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_direction" />
+    </RelativeLayout>
+
     <ImageButton
         android:id="@+id/btn_main"
-        android:layout_width="74dp"
+        android:layout_width="64dp"
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:src="@drawable/icon_power_off"
         android:background="@null"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
